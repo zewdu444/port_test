@@ -2,6 +2,7 @@ const mobileoption = document.getElementById("mobileoption");
 const body = document.querySelector("body");
 const content = document.querySelector(".content");
 mobileoption.style.display = "none";
+window.addEventListener("scroll", activePosition);
 
 function openOption() {
   mobileoption.style.display = "block";
