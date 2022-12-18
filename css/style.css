@@ -962,6 +962,10 @@ footer {
   .contactname:nth-of-type(2) {
     display: block;
   }
+  /* hide mobile option */
+  .mobileoption {
+    display: none;
+  }
 }
 
 /* scaling animation */
@@ -1002,4 +1006,40 @@ footer {
   100% {
     background-color: #ebebff;
   }
+}
+/* mobile menu option */
+.mobileoption {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  background-color: #6070ff;
+  height: 100%;
+  margin-left: -25px;
+  margin-top: -60px;
+  opacity: 0.9;
+}
+.closebutton {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin-top: 72px;
+  margin-left: auto;
+  padding-right: 70px;
+  font-size: 32px;
+}
+.option {
+  list-style: none;
+}
+.option > li {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+.optionlist {
+  color: white;
+  text-decoration: none;
 }
